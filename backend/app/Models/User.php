@@ -21,6 +21,7 @@ class User extends Authenticatable
         'lastname',
         'age',
         'city',
+        'country',
         'email',
         'github',
         'instagram',
@@ -34,4 +35,6 @@ class User extends Authenticatable
     public function Hobbies(){
         return $this->hasMany(Hobbies::class);
     }
+
+    public $timestamps = false;
 }

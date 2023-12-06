@@ -17,11 +17,11 @@ return new class extends Migration
             $table->string('lastname');
             $table->integer('age');
             $table->string('city');
+            $table->string('country');
             $table->string('email');
             $table->string('github');
             $table->string('instagram');
             $table->string('summary');
-            $table->timestamps();
         });
     }
 

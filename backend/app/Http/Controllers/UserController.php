@@ -22,6 +22,7 @@ class UserController extends Controller
             $user->lastname = $request->input('lastname', $user->lastname);
             $user->age = $request->input('age', $user->age);
             $user->city = $request->input('city', $user->city);
+            $user->country = $request->input('country', $user->country);
             $user->email = $request->input('email', $user->email);
             $user->github = $request->input('github', $user->github);
             $user->instagram = $request->input('instagram', $user->instagram);
@@ -33,6 +34,7 @@ class UserController extends Controller
                 'lastname' => $user->lastname,
                 'age' => $user->age,
                 'city' => $user->city,
+                'country' => $user->country,
                 'email' => $user->email,
                 'github' => $user->github,
                 'instagram' => $user->instagram,

@@ -18,6 +18,7 @@ class DefaultUserSeeder extends Seeder
             'name' => 'Ignacio',
             'lastname' => 'Avendaño',
             'age' => 22,
+            'country' => 'Chile',
             'city' => 'Antofagasta',
             'email' => 'ignacio.avendano@alumnos.ucn.cl',
             'github' => 'https://github.com/xfunktastic',
