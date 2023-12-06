@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "b456401f-45f7-4582-8ada-f72a7c18916a",
+		"name": "practica03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29974575"
+	},
+	"item": [
+		{
+			"name": "Get User Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/api/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "User Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Ernes\",\r\n        \"lastname\": \"Fuenzalida\",\r\n        \"age\": 21,\r\n        \"city\": \"Tocopilla\",\r\n        \"email\": \"ernes.fuenzalida@alumnos.ucn.cl\",\r\n        \"github\": \"https://github.com/ernitoft\",\r\n        \"instagram\": \"https://instagram.com/ernitoft\",\r\n        \"summary\": \"Soy estudiante de Ingeniería en Computación e Informática en la Universidad Catolica del Norte\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/api/profile/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Framework Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Angular\",\r\n    \"level\": \"Básico\",\r\n    \"year\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/api/profile/framework/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Hobbie Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"Tocar el Bajo\",\r\n                \"description\": \"Me gusta tocar el Bajo\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/api/profile/hobbie/1"
+			},
+			"response": []
+		}
+	]
+}
