@@ -22,7 +22,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"name\": \"Ernes\",\r\n        \"lastname\": \"Fuenzalida\",\r\n        \"age\": 21,\r\n        \"city\": \"Tocopilla\",\r\n        \"email\": \"ernes.fuenzalida@alumnos.ucn.cl\",\r\n        \"github\": \"https://github.com/ernitoft\",\r\n        \"instagram\": \"https://instagram.com/ernitoft\",\r\n        \"summary\": \"Soy estudiante de Ingeniería en Computación e Informática en la Universidad Catolica del Norte\"\r\n}",
+					"raw": "{\r\n        \"name\": \"Ricky\",\r\n        \"lastname\": \"Urvina\",\r\n        \"age\": 30,\r\n        \"city\": \"Quito\",\r\n        \"country\":\"Ecuador\",\r\n        \"email\": \"ricardo.urvina@ucn.cl\",\r\n        \"github\": \"https://github.com/rickyurvinaUCN\",\r\n        \"instagram\": \"https://instagram.com/ricky.urvina\",\r\n        \"summary\": \"Soy profesor de Ingeniería Civil en Computación e Informática en la Universidad Catolica del Norte\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,7 +40,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Angular\",\r\n    \"level\": \"Básico\",\r\n    \"year\": 5\r\n}",
+					"raw": "{\r\n    \"name\": \"Angular\",\r\n    \"level\": \"Experto\",\r\n    \"year\": 5\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

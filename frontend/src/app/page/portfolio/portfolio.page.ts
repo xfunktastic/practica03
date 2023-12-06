@@ -1,8 +1,5 @@
 import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-
-
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.page.html',
@@ -14,7 +11,7 @@ export class PortfolioPage implements OnInit {
   frameworks: any [] = [];
   hobbies: any [] = [];
 
-  constructor(private ApiService: ApiService, private router:Router) { }
+  constructor(private ApiService: ApiService) { }
 
   ngOnInit() {
     this.fillData();
