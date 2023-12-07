@@ -1,3 +1,4 @@
+import { Form } from '@angular/forms';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, firstValueFrom } from 'rxjs';
@@ -14,7 +15,9 @@ export class ApiService {
     return this.http.get<any>(this.url);
   }
 
-  editUserData(){}
+  editUser(Form:any) {
+    return this.http.put<any>(`${this.url}/user/` + Form.id , Form);
+  }
 
   editFrameworks(){}
 

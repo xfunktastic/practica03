@@ -1,13 +1,62 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>edit-user</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">edit-user</ion-title>
+      <ion-title>
+        Editar Perfil
+      </ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="name" value="{{ users[0].name }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input formControlName="lastname" value="{{ users[0].lastname }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Edad</ion-label>
+          <ion-input formControlName="age" value="{{ users[0].age }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input formControlName="email" value="{{ users[0].email }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Pais</ion-label>
+          <ion-input formControlName="country" value="{{ users[0].country }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ciudad</ion-label>
+          <ion-input formControlName="city" value="{{ users[0].city }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Github</ion-label>
+          <ion-input formControlName="github" value="{{ users[0].github }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Instagram</ion-label>
+          <ion-input formControlName="instagram" value="{{ users[0].instagram }}" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Resumen</ion-label>
+          <ion-input formControlName="summary" value="{{ users[0].summary }}" required></ion-input>
+        </ion-item>
+
+        <ion-button type="submit">Guardar cambios</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
