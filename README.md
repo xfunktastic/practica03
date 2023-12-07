@@ -54,7 +54,7 @@ Este proyecto consiste en la creación de una API utilizando Laravel y consumien
     
 10. Inicia el servidor: `php artisan serve`.
 
-- El backend será ejecutado en [http://localhost:8000/api/profile](http://localhost:8000/profileapi/).
+- El backend será ejecutado en [http://localhost:8000/api/profile](http://localhost:8000/api/profile).
 
 ## Configuración del Frontend (Angular)
 
@@ -70,7 +70,7 @@ El frontend estará disponible en [http://localhost:4200/](http://localhost:4200
 
 ## Consideraciones
 
-- No pude hacer routing hacia el edit-user entonces hay que acceder manualmente.
+- No pude hacer routing hacia el edit-user entonces hay que acceder manualmente con [http://localhost:4200/edit-user](http://localhost:4200/edit-user).
 
 ## Autor
 
