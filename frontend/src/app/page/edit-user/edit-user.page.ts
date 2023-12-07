@@ -36,14 +36,30 @@ export class EditUserPage implements OnInit {
     this.ApiService.getUsers().subscribe(data=>{
       console.log(data);
       this.users = data;
+      if (this.users.length > 0) {
+        this.form.patchValue(this.users[0]);
+      }
     })
   }
 
-  onSubmit(){
-    this.form.value.id = this.users[0].id;
-    this.ApiService.editUser(this.form.value).subscribe(response=>{
-      console.log("Usuario editado con éxito",response);
-    })
+  onSubmit() {
+    if (this.users.length > 0 && this.form.valid) {
+      this.form.patchValue({
+        id: this.users[0]?.id
+      });
+
+      this.ApiService.editUser(this.form.value).subscribe(
+        (response) => {
+          console.log("Usuario editado con éxito", response);
+        },
+        (error) => {
+          console.error("Error al editar el usuario", error);
+        }
+      );
+    } else {
+      console.error('No hay usuarios para editar o el formulario no es válido.');
+    }
   }
+
 
 }
