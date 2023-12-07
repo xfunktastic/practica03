@@ -46,13 +46,13 @@ Este proyecto consiste en la creación de una API utilizando Laravel y consumien
     
 7. Configura la base de datos en el archivo con tus datos `.env`.
     
-9. Ejecuta las migraciones y los seeders: 
+8. Ejecuta las migraciones y los seeders: 
 - `php artisan migrate`.
 - `php artisan db:seed --class=DefaultUserSeeder`.
 - `php artisan db:seed --class=DefaultFrameworksSeeder`.
 - `php artisan db:seed --class=DefaultHobbiesSeeder`.
     
-10. Inicia el servidor: `php artisan serve`.
+9. Inicia el servidor: `php artisan serve`.
 
 - El backend será ejecutado en [http://localhost:8000/api/profile](http://localhost:8000/api/profile).
 
